@@ -1,6 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { Link } from 'react-router-dom';
 
-export default class Registration
+function Registration()
 {
-
+    useEffect(() =>
+    {
+      document.title = "Registration";
+    });
+    return (
+      <div className="Registration">
+        <button type="button"><Link to="/">Log</Link></button>
+      </div>
+    );
 }
+
+export default Registration;

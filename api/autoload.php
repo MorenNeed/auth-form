@@ -5,7 +5,7 @@ class Autoload
     {
         spl_autoload_register(function ($className)
         {
-            $paths = array('', 'config', 'database', 'validation');
+            $paths = array('', 'config', 'database', 'validation', 'actions', 'controller', 'router');
 
             foreach($paths as $path)
             {

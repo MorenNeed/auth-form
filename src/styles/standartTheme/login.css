@@ -1,0 +1,95 @@
+.Login
+{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    background: rgba(255, 255, 255, 0);
+    border-radius: 2rem;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+}
+#Log_label
+{
+    text-align: center;
+    margin-top: 2rem;
+}
+.Login div
+{
+    margin-left: 20rem;
+    margin-right: 20rem;
+    margin-top: 4rem;
+    height: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 1rem;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    z-index: 1;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+.Login div label
+{
+    width: 80%;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+.Login div input
+{
+    width: 80%;
+    height: 60%;
+    font-size: 1.25rem;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 0.5rem;
+    border: 0px;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+#forgot_pass
+{
+    text-align: end;
+    margin-top: 1rem;
+    margin-right: 20rem;
+    font-size: 1rem;
+}
+
+@media (max-width: 1500px)
+{
+    .Login div
+    {
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
+    #forgot_pass
+    {
+        margin-right: 10rem;
+        font-size: 0.75rem;
+    }
+}
+@media (max-width: 800px)
+{
+    .Login div
+    {
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+    #forgot_pass
+    {
+        margin-right: 5rem;
+    }
+}

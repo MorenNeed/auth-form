@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.7)
+}
+#root
+{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(#e58484, #9398ce);
+}
+a
+{
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.7);
+}

@@ -1,9 +1,9 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Login from './pages/login.js';
-import Registration from './pages/registration.js';
-import './styles/index.css';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Login from './pages/login';
+import Registration from './pages/registration';
+import './styles/standartTheme/index.css';
 
 class AuthForm extends React.Component
 {
@@ -12,12 +12,14 @@ class AuthForm extends React.Component
     return(
       <Router>
         <Routes>
-          <Route path='/' element={<Login/>}/>
-          <Route path='/registration' element={<Registration/>}/>
+          <Route path="/" element={<Login/>}/>
+          <Route path="/registration" element={<Registration/>}/>
         </Routes>
       </Router>
     );
   }
 }
 
-ReactDOM.createRoot(document.getElementById('root')).render(<AuthForm/>);
+const Auth = ReactDOM.createRoot(document.getElementById("root"));
+
+Auth.render(<AuthForm/>);

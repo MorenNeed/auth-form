@@ -7,4 +7,7 @@
 
     require (dirname(__FILE__) . DIRECTORY_SEPARATOR . 'autoload.php');
 
+    $router = new Router();
+
+    $router->get();
 ?>
