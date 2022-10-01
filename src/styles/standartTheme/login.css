@@ -29,7 +29,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: rgba(0, 0, 0, 0.05);
+    background: rgba(0, 0, 0, 0.03);
     border-radius: 1rem;
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
@@ -42,23 +42,42 @@
 .Login div label
 {
     width: 80%;
-    margin-top: 1rem;
-    margin-bottom: 0.5rem;
+    position: absolute;
+    font-size: 2rem;
+    margin-top: 3vh;
 }
 .Login div input
 {
     width: 80%;
     height: 60%;
-    font-size: 1.25rem;
-    text-align: center;
-    background: rgba(0, 0, 0, 0.05);
-    border-radius: 0.5rem;
+    font-size: 2rem;
+    background: transparent;
     border: 0px;
-    -webkit-border-radius: 0.5rem;
-    -moz-border-radius: 0.5rem;
-    -ms-border-radius: 0.5rem;
-    -o-border-radius: 0.5rem;
+    border-bottom: 2px solid;
+    border-color: rgba(0, 0, 0, 0.5);
+    transition: border-color 0.5s;
+    -webkit-transition: border-color 0.5s;
+    -moz-transition: border-color 0.5s;
+    -ms-transition: border-color 0.5s;
+    -o-transition: border-color 0.5s;
     margin-bottom: 1rem;
+    margin-top: 1rem;
+    color: rgba(0, 0, 0, 0.75);
+}
+.LoginDivInput_anim
+{
+    animation: input_click 1s;
+    -webkit-animation: input_click 1s;
+}
+.Login div input:focus
+{
+    outline: none;
+    border-color: rgba(0, 0, 0, 1);
+    transition: border-color 0.5s;
+    -webkit-transition: border-color 0.5s;
+    -moz-transition: border-color 0.5s;
+    -ms-transition: border-color 0.5s;
+    -o-transition: border-color 0.5s;
 }
 #forgot_pass
 {
@@ -92,4 +111,24 @@
     {
         margin-right: 5rem;
     }
+}
+
+@keyframes input_click
+{
+    0%
+    {
+        transform: scale(1, 1);
+        -webkit-transform: scale(1, 1);
+        -moz-transform: scale(1, 1);
+        -ms-transform: scale(1, 1);
+        -o-transform: scale(1, 1);
+}
+    100%
+    {
+        transform: scale(0.5, 0.5);
+        -webkit-transform: scale(0.5, 0.5);
+        -moz-transform: scale(0.5, 0.5);
+        -ms-transform: scale(0.5, 0.5);
+        -o-transform: scale(0.5, 0.5);
+}
 }
