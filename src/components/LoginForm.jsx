@@ -84,7 +84,7 @@ export default class LoginForm extends React.Component
                 </div>
                 <h2 id="forgot_pass"><Link>Forgot Password?</Link></h2>
                 <div className="Submit">
-                    <input className="input" id="submit_input" type="submit" name="submit_input" value="Submit"></input>
+                    <input className="input" id="submit_input" type="submit" name="submit_input" value="Log In" ></input>
                 </div>
             </form>
         );

@@ -5,9 +5,8 @@
     width: 80%;
     height: 80%;
     margin: auto;
-    background: rgba(255, 255, 255, 0);
+    padding-top: 5%;
     border-radius: 2rem;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     -webkit-border-radius: 2rem;
@@ -41,14 +40,14 @@
 }
 .Login div label
 {
-    width: 80%;
+    width: 90%;
     position: absolute;
     font-size: 2rem;
-    margin-top: 3vh;
+    margin-top: 4vh;
 }
 .Login div input
 {
-    width: 80%;
+    width: 90%;
     height: 60%;
     font-size: 2rem;
     background: transparent;
@@ -125,12 +124,12 @@
 {
     .Login div
     {
-        margin-left: 5rem;
-        margin-right: 5rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
     }
     #forgot_pass
     {
-        margin-right: 5rem;
+        margin-right: 2rem;
     }
 }
 
@@ -139,7 +138,7 @@
     0%
     {
         margin-top: 3vh;
-        width: 80%;
+        width: 90%;
         left: 10%;
         color: rgba(0, 0, 0, 0.75);
         transform: scale(1, 1);
@@ -153,7 +152,7 @@
         width: 0%;
         color: rgba(0, 0, 0, 1);
         margin-top: 0vh;
-        left: 10%;
+        left: 5%;
         transform: scale(0.5, 0.5);
         -webkit-transform: scale(0.5, 0.5);
         -moz-transform: scale(0.5, 0.5);
