@@ -9,5 +9,5 @@
 
     $router = new Router();
 
-    $router->get();
+    $router->get($_SERVER["REQUEST_METHOD"]);
 ?>
